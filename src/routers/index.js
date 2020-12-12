@@ -28,6 +28,18 @@ import PrivateRouterAdmin from "./PrivateAdminRouter";
 import PrivateRoute from "./PrivateRouter";
 import MenuAdmin from  '../pages/view/Admin/Menu/index'
 
+import React from 'react'
+ra
+const index = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default index
+
 const Routers = () => {
   // if(isLogin){
   //     setCheck(true)
@@ -35,7 +47,7 @@ const Routers = () => {
   // else(setCheck(false))
 
   return (
-    <Router>
+    <HashRouter>
       <Switch>
         <Route path="/admin/login">
           <Login />
@@ -99,7 +111,7 @@ const Routers = () => {
           </Main>
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 };
 
